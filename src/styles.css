@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Play", sans-serif;
+}
+
+:root {
+  --text-color: #ebedf2;
+  --first-color: #584ab0;
+  --second-color: #7765f0;
+  --third-color: #251f4a;
+  --fourth-color: #000000;
+  --fifth-color: #1d1d1d;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #000000, #584ab0, #7765f0);
+  background-size: 600%;
+}
