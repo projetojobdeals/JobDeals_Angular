@@ -1,0 +1,168 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: top;
+}
+
+.cards {
+  flex-direction: column;
+}
+
+.filter {
+  background-color: #584ab0;
+  border-radius: 20px;
+  width: 15%;
+  height: fit-content;
+  padding: 26px;
+  margin-right: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.filter .description-filter h1 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #ebedf2;
+  text-align: center;
+}
+
+.filter .description-filter h2 {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #ebedf2;
+}
+
+.filter .description-filter p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #ebedf2;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #7765f0;
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1px;
+  left: 4px;
+}
+span {
+  margin: 0px 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 100%;
+  height: 0.5em;
+  left: 4em;
+  border-radius: 5px;
+  background-color: #7765f0;
+  outline: none;
+  cursor: pointer;
+}
+
+#inputLengthId::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7865f0d3;
+}
+
+.filter-button {
+  text-align: center;
+}
+
+.filter-button button {
+  border: none;
+  height: 40px;
+  background-color: #7765f0;
+  padding: 0.2rem 3rem;
+  margin-top: 20px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.filter-button a button {
+  color: #ebedf2;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* ---media query--- */
+
+@media (max-width: 1150px) {
+  .searchbar {
+    flex-direction: column;
+  }
+
+  .searchbar-keyword {
+    width: 420px;
+  }
+
+  .divider {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: #251f4a;
+  }
+}
+
+@media (max-width: 630px) {
+  .searchbar-keyword {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .searchbar-keyword {
+    width: 270px;
+  }
+
+  .searchbar-mobile-button {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+  }
+
+  .searchbar-keyword-filter {
+    padding-left: 0.5rem;
+  }
+
+  .searchbar-keyword input {
+    padding-left: 0.5rem;
+    width: 240px;
+  }
+
+  .searchbar-button {
+    margin-top: 0.3rem;
+  }
+}

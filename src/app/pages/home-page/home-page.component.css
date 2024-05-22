@@ -1,0 +1,308 @@
+/* ---Barra de pesquisa--- */
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  background-color: #ebedf2;
+  box-shadow: 0px 3px 10px #000000;
+  border-radius: 24px;
+}
+
+.searchbar-keyword {
+  width: 300px;
+  height: 56px;
+  position: relative;
+}
+
+.searchbar-keyword-filter {
+  position: absolute;
+  top: 5px;
+  left: 0.5rem;
+  padding-left: calc(1.5rem - 1px);
+  color: #584ab0;
+  font-weight: 700;
+}
+
+.searchbar-keyword-input {
+  position: absolute;
+  top: 28px;
+  left: 0.5rem;
+}
+
+.searchbar-keyword-input :focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.searchbar-keyword input {
+  width: 280px;
+  padding: 1px 2px;
+  border: 0 none;
+  border-color: transparent;
+  background-color: transparent;
+  transition: none;
+  padding-left: calc(1.5rem - 1px);
+}
+
+/* ---divisorias--- */
+.divider {
+  margin-top: 8px;
+  width: 1px;
+  height: 40px;
+  background-color: #251f4a;
+}
+
+.searchbar-mobile-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+}
+
+/* ---botão de home ofice--- */
+.searchbar-radio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 180px;
+}
+
+.home-office {
+  display: none;
+}
+
+.searchbar-radio-button {
+  display: inline-block;
+  width: 4.2rem;
+  height: 1.6rem;
+  background-color: #999999;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  top: 0.2rem;
+  left: 0.18rem;
+  z-index: 1;
+  background-color: #fcfff4;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 32px;
+  box-sizing: border-box;
+  transition: 0.3s cubic-bezier(0.895, 0.07, 0.685, 0.68);
+}
+
+.home-office:checked ~ .searchbar-radio-button > .button {
+  left: 2.85rem;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.home-office:checked ~ .searchbar-radio-button {
+  background: #40b038;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* ---botão de busca--- */
+.searchbar-button {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+
+.searchbar-button button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: #584ab0;
+  padding: 0.4rem 1rem;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.searchbar-button button a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #ebedf2;
+  text-align: center;
+}
+
+/* ---Conteúdo da página--- */
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 1rem 0rem;
+  padding: 26px;
+  background-color: #584ab0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 3px solid yellow;
+  border-radius: 20px;
+}
+
+.pricing-card .description h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #ebedf2;
+}
+
+.premium-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.premium-button button {
+  border: none;
+  height: 50px;
+  width: 400px;
+  background-color: #473c8e;
+  padding: 0.4rem 1rem;
+  margin-top: 30px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.premium-button a button {
+  color: yellow;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 37px;
+  text-align: center;
+}
+
+/* ---card de vagas--- */
+
+.vacancies-card {
+  margin: 1rem 0rem;
+  width: 80%;
+  height: auto;
+  background-color: #584ab0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-items: center;
+}
+
+.vacancies-card .description1 h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #ebedf2;
+  text-align: center;
+}
+
+.vacancies-card .description1 a {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: yellow;
+}
+
+.vacancies {
+  align-self: start;
+  padding: 15px 50px;
+}
+
+.vacancies h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ebedf2;
+}
+
+.vacancies p {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  color: #ebedf2;
+}
+
+.divider1 {
+  margin-top: 10px;
+  width: 72vw;
+  height: 1px;
+  background-color: #ebedf2;
+}
+
+.vacancies-button button {
+  border: none;
+  height: 50px;
+  background-color: #7765f0;
+  padding: 0.4rem 5rem;
+  margin-top: 20px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.vacancies-button a button {
+  color: #ebedf2;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 37px;
+  text-align: center;
+}
+
+/* ---media query--- */
+
+@media (max-width: 1150px) {
+  .searchbar {
+    flex-direction: column;
+  }
+
+  .searchbar-keyword {
+    width: 420px;
+  }
+
+  .divider {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: #251f4a;
+  }
+}
+
+@media (max-width: 630px) {
+  .searchbar-keyword {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .searchbar-keyword {
+    width: 270px;
+  }
+
+  .searchbar-mobile-button {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+  }
+
+  .searchbar-keyword-filter {
+    padding-left: 0.5rem;
+  }
+
+  .searchbar-keyword input {
+    padding-left: 0.5rem;
+    width: 240px;
+  }
+
+  .searchbar-button {
+    margin-top: 0.3rem;
+  }
+}

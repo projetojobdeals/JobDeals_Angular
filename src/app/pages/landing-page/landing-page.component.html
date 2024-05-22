@@ -1,1 +1,186 @@
-<p>landing-page works!</p>
+<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<body>
+  <form action="">
+    <div class="searchbar">
+      <div class="searchbar-keyword">
+        <div class="searchbar-keyword-filter">
+          <label for="keyword">Qual vaga você está buscando?</label>
+        </div>
+        <div class="searchbar-keyword-input">
+          <input
+            type="text"
+            name="keyword"
+            id="keyword"
+            placeholder="Qual vaga você está buscando?"
+          />
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="searchbar-keyword">
+        <div class="searchbar-keyword-filter">
+          <label for="location">Digite sua localização.</label>
+        </div>
+        <div class="searchbar-keyword-input">
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="CEP, Cidade, Estado, País..."
+          />
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="searchbar-mobile-button">
+        <div class="searchbar-radio">
+          <label for="home-office" class="radio-home-office">
+            <input type="checkbox" class="home-office" id="home-office" />
+            <div class="searchbar-radio-button">
+              <div class="button"></div>
+            </div>
+          </label>
+          <label for="home-office" class="">Home Office</label>
+        </div>
+        <div class="searchbar-button">
+          <button><a routerLink="#">Buscar</a></button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="container">
+    <div class="index-text">
+        <h1>
+            Fácil de usar, simples de entender, perfeito para encontrar vagas e talentos.
+        </h1>
+        <p>
+            Nós nos esforçamos para talentos encontrarem oportunidades.
+        </p>
+        <div class="index-buttons">
+            <div class="login-button">
+                <a routerLink="login"><button>Login</button></a>
+            </div>
+            <div class="singup-button">
+                <a routerLink="signup-page"><button>Cadastre-se</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="index-image">
+      <img
+        src="assets/img/img-index.svg"
+        alt="homem com uma lupa procurando canditatos."
+      />
+    </div>
+  </div>
+
+  <section class="pricing">
+    <div class="card">
+      <div class="card-title">
+        <h2>Basic</h2>
+      </div>
+      <div class="card-content">
+        <ul>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Destaque-se e entre em contato
+            com recrutadores
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Ultrapasse os candidatos não
+            pagantes da vaga
+          </li>
+          <li class="pricing-list-close">
+            <span class="material-symbols-outlined">close</span
+            ><i class="fa fa-check-circle"></i> Identifique as vagas mais
+            compatíveis com seu perfil
+          </li>
+          <li class="pricing-list-close">
+            <span class="material-symbols-outlined">close</span
+            ><i class="fa fa-times-circle"></i> Suporte prioritário para
+            qualquer questão
+          </li>
+          <li class="pricing-list-close">
+            <span class="material-symbols-outlined">close</span
+            ><i class="fa fa-times-circle"></i> Seu CV é enviado automaticamente
+            para as vagas mais compatíveis
+          </li>
+        </ul>
+        <a routerLink="pricing"><button>Adquirir</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <h2>Standard</h2>
+      </div>
+      <div class="card-content">
+        <ul>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Destaque-se e entre em contato
+            com recrutadores
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Ultrapasse os candidatos não
+            pagantes da vaga
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Identifique as vagas mais
+            compatíveis com seu perfil
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-times-circle"></i> Suporte prioritário para
+            qualquer questão
+          </li>
+          <li class="pricing-list-close">
+            <span class="material-symbols-outlined">close</span
+            ><i class="fa fa-times-circle"></i> Seu CV é enviado automaticamente
+            para as vagas mais compatíveis
+          </li>
+        </ul>
+        <a routerLink="pricing"><button>Adquirir</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <h2>Premium</h2>
+      </div>
+      <div class="card-content">
+        <ul>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Destaque-se e entre em contato
+            com recrutadores
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Ultrapasse os candidatos não
+            pagantes da vaga
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-check-circle"></i> Identifique as vagas mais
+            compatíveis com seu perfil
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-times-circle"></i> Suporte prioritário para
+            qualquer questão
+          </li>
+          <li class="pricing-list-check">
+            <span class="material-symbols-outlined">check</span
+            ><i class="fa fa-times-circle"></i> Seu CV é enviado automaticamente
+            para as vagas mais compatíveis
+          </li>
+        </ul>
+        <a routerLink="pricing"><button>Adquirir</button></a>
+      </div>
+    </div>
+  </section>
+</body>

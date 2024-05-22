@@ -1,0 +1,289 @@
+.background-radiant {
+  width: 90%;
+  height: 70%;
+  background: radial-gradient(
+      99.68% 185.51% at 2.42% 4.03%,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    #584ab0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0px 10px 40px #584ab0;
+  margin: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: auto 5px;
+}
+
+.helpcenter-text {
+  margin: 5rem 4rem;
+  width: 40%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ebedf2;
+  padding: 70px 60px;
+  background: #1d1d1d;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #171044;
+}
+
+.helpcenter-title h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: clamp(1.9rem, 8vw + 0.1rem, 4rem);
+  margin-top: 7rem;
+  text-align: center;
+  color: #ebedf2;
+}
+
+.helpcenter-text h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: clamp(1.9rem, 8vw + 0.1rem, 4rem);
+  text-align: center;
+  color: #ebedf2;
+  margin-bottom: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.accordion_item {
+  border-radius: 5px;
+  background-color: #181818;
+  color: #ebedf2;
+  width: 100%;
+}
+
+.accordion_item:hover {
+  opacity: 0.9;
+}
+
+.accordion_header {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion_content {
+  margin-left: 15px;
+  margin-right: 15px;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.5s ease;
+  font-size: 16px;
+}
+
+.active {
+  padding-bottom: 10px;
+}
+
+.accordion_header spam,
+.icon {
+  font-weight: 600;
+}
+
+p {
+  text-align: justify;
+}
+
+.helpcenter-aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+}
+
+.helpcenter-aside h2 {
+  width: 70%;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: clamp(1.9rem, 8vw + 0.1rem, 4rem);
+  text-align: center;
+  color: #ebedf2;
+  margin-bottom: 50px;
+}
+
+.helpcenter-image {
+  width: 42rem;
+  height: 42rem;
+  display: flex;
+}
+
+.helpcenter-contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.helpcenter-image img {
+  margin: 2rem;
+  display: flex;
+  align-items: end;
+}
+
+.form {
+  width: 50%;
+}
+
+.campo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.campo-texto {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.campo-texto input {
+  border-radius: 3%;
+  width: 20rem;
+  height: 50px;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #181818;
+  color: #ebedf2;
+  margin-bottom: 10px;
+}
+
+.campo textarea {
+  width: 30rem;
+  height: 15rem;
+  border-radius: 3%;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #181818;
+  color: #ebedf2;
+}
+
+.campo textarea:focus-visible,
+.campo-texto input:focus-visible {
+  outline: 2px solid #584ab0;
+}
+
+.nome {
+  font-size: 50px;
+}
+
+.grupo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Input {
+  text-align: center;
+}
+
+.helpcenter-contact button {
+  border: none;
+  height: 50px;
+  background-color: #584ab0;
+  padding: 0.4rem 1rem;
+  margin-top: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.helpcenter-contact a button {
+  color: #ebedf2;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 37px;
+  text-align: center;
+}
+
+/* ---media query--- */
+
+@media (max-width: 1460px) {
+  .helpcenter-text {
+    margin: 2.5rem 2rem;
+    width: 40%;
+    padding: 35px 30px;
+  }
+
+  .helpcenter-image img {
+    margin-left: 50px;
+    width: 30rem;
+  }
+
+  .helpcenter-contact {
+    width: 70%;
+  }
+
+  .helpcenter-contact h2 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .helpcenter-image {
+    display: none;
+  }
+
+  .helpcenter-contact {
+    margin: 7rem 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .helpcenter-text {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 630px) {
+  .helpcenter-contact {
+    width: 90%;
+  }
+
+  .helpcenter-contact h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .helpcenter-text h2 {
+    margin-bottom: 20px;
+  }
+}

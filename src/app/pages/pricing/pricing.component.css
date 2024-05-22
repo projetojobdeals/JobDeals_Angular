@@ -1,0 +1,156 @@
+.pricing {
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ebedf2;
+}
+
+.pricing-list-close {
+  display: flex;
+  text-decoration: none;
+  color: #ebedf233;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-list-check {
+  display: flex;
+  text-decoration: none;
+  color: #ebedf2;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-list-check span {
+  color: #00ff47;
+}
+
+.pricing .card {
+  width: 300px;
+  height: auto;
+  padding: 10px 0;
+  margin: 1.5rem 2rem;
+  text-align: center;
+  background: #251f4a;
+  border-radius: 15px;
+  box-shadow: 2px 5px 15px black;
+  transition: transform 0.3s;
+}
+
+.pricing .card:hover {
+  transform: scale(1.05);
+}
+
+.pricing .card .card-title {
+  padding: 30px 20px;
+  border-bottom: 2px solid gray;
+}
+
+.pricing .card .card-title h2 {
+  font-size: 35px;
+  padding-bottom: 15px;
+  color: yellow;
+}
+
+.pricing .card .card-title p span {
+  font-size: 40px;
+  padding: 0 5px;
+}
+
+.pricing .card .card-content ul {
+  padding: 10px 30px;
+  padding-bottom: 20px;
+}
+
+.pricing .card .card-content ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.pricing .card .card-content ul li i {
+  margin-right: 4px;
+}
+
+.pricing .card .card-content button {
+  width: 120px;
+  padding: 10px 20px;
+  background: #584ab0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pricing .card .card-content button:hover {
+  background: #584ab0;
+  letter-spacing: 1.2px;
+}
+
+.pricing .card .card-content button a {
+  text-decoration: none;
+  color: #ebedf2;
+  font-size: 15px;
+}
+
+/* ---media query--- */
+
+@media (max-width: 1150px) {
+  .pricing {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pricing ul {
+    width: 20rem;
+  }
+
+  .searchbar {
+    flex-direction: column;
+  }
+
+  .searchbar-keyword {
+    width: 420px;
+  }
+
+  .divider {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: #251f4a;
+  }
+}
+
+@media (max-width: 450px) {
+  .pricing ul {
+    width: 19rem;
+    height: 27rem;
+  }
+
+  .pricing-title {
+    font-size: 1.8rem;
+  }
+
+  .pricing-list-check {
+    font-size: 1.2rem;
+  }
+
+  .pricing-list-check span {
+    font-size: 1.4rem;
+  }
+
+  .pricing-list-close {
+    font-size: 1.2rem;
+  }
+
+  .pricing-list-close span {
+    font-size: 1.4rem;
+  }
+
+  .pricing-button {
+    margin-top: 2rem;
+  }
+}

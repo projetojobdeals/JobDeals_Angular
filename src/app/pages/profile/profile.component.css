@@ -1,0 +1,178 @@
+.container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.profile-card {
+  margin: 5rem 4rem;
+  width: 25%;
+  height: 32rem;
+  background-color: #584ab0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card1 {
+  margin: 1rem 0rem;
+  width: 85%;
+  height: auto;
+  background-color: #584ab0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile-image {
+  width: 180px;
+  border-radius: 50%;
+  background-color: #584ab0;
+  border: #584ab0 5px solid;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: translateY(-65px);
+  margin-bottom: -25px;
+}
+
+h1.name {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #00ffff;
+  padding-bottom: 25px;
+}
+
+h2.description {
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #ebedf2;
+}
+
+.profile-text .description p {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ebedf2;
+}
+
+.profile-card1 .description h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #00ffff;
+  text-align: center;
+}
+
+.profile-card1 .description p {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: justify;
+  color: #ebedf2;
+}
+
+.profile-address {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ebedf2;
+}
+
+.address-ico {
+  width: 24px;
+}
+
+.socials {
+  margin: 30px 0;
+}
+
+.socials a {
+  margin-right: 40px;
+}
+
+.socials a:last-child {
+  margin-right: 0;
+}
+
+.socials img {
+  width: 48px;
+  transition: all 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(110%);
+}
+
+.card {
+  margin: 1rem 0rem;
+  width: 85%;
+  height: auto;
+  background-color: #584ab0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .description h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #ebedf2;
+  text-align: center;
+}
+
+.card .description p {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: justify;
+  color: #ebedf2;
+}
+
+.apply-button {
+  text-align: center;
+}
+
+.apply-button button {
+  border: none;
+  height: 50px;
+  background-color: #7765f0;
+  padding: 0.4rem 5rem;
+  margin-top: 20px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.apply-button a button {
+  color: #ebedf2;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 37px;
+  text-align: center;
+}

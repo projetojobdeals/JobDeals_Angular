@@ -1,0 +1,58 @@
+.cards {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.vacancies-card {
+  margin: 1rem 0rem;
+  height: auto;
+  background-color: #584ab0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-items: center;
+}
+
+.vacancies-card .description1 h1 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #ebedf2;
+  text-align: center;
+}
+
+.vacancies-card .description1 a {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: yellow;
+}
+
+.vacancies {
+  align-self: start;
+  padding: 15px 50px;
+}
+
+.vacancies h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ebedf2;
+}
+
+.vacancies p {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  color: #ebedf2;
+}
+
+.divider1 {
+  margin-top: 10px;
+  width: 60vw;
+  height: 1px;
+  background-color: #ebedf2;
+}

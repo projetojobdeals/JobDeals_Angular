@@ -1,0 +1,444 @@
+/* ---Barra de pesquisa--- */
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  background-color: #ebedf2;
+  box-shadow: 0px 3px 10px #000000;
+  border-radius: 24px;
+}
+
+.searchbar-keyword {
+  width: 300px;
+  height: 56px;
+  position: relative;
+}
+
+.searchbar-keyword-filter {
+  position: absolute;
+  top: 5px;
+  left: 0.5rem;
+  padding-left: calc(1.5rem - 1px);
+  color: #584ab0;
+  font-weight: 700;
+}
+
+.searchbar-keyword-input {
+  position: absolute;
+  top: 28px;
+  left: 0.5rem;
+}
+
+.searchbar-keyword-input :focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.searchbar-keyword input {
+  width: 280px;
+  padding: 1px 2px;
+  border: 0 none;
+  border-color: transparent;
+  background-color: transparent;
+  transition: none;
+  padding-left: calc(1.5rem - 1px);
+}
+
+/* ---divisorias--- */
+.divider {
+  margin-top: 8px;
+  width: 1px;
+  height: 40px;
+  background-color: #251f4a;
+}
+
+.searchbar-mobile-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+}
+
+/* ---botão de home ofice--- */
+.searchbar-radio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 180px;
+}
+
+.home-office {
+  display: none;
+}
+
+.searchbar-radio-button {
+  display: inline-block;
+  width: 4.2rem;
+  height: 1.6rem;
+  background-color: #999999;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  top: 0.2rem;
+  left: 0.18rem;
+  z-index: 1;
+  background-color: #fcfff4;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 32px;
+  box-sizing: border-box;
+  transition: 0.3s cubic-bezier(0.895, 0.07, 0.685, 0.68);
+}
+
+.home-office:checked ~ .searchbar-radio-button > .button {
+  left: 2.85rem;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.home-office:checked ~ .searchbar-radio-button {
+  background: #40b038;
+  box-shadow: inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* ---botão de busca--- */
+.searchbar-button {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+
+.searchbar-button button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  background-color: #584ab0;
+  padding: 0.4rem 1rem;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.searchbar-button button a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #ebedf2;
+  text-align: center;
+}
+
+/* ---conteudo da pagina--- */
+/* ---texto e imagem--- */
+.container {
+  width: 80vw;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.index-text {
+  margin: 3rem 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ebedf2;
+}
+
+.index-text h1 {
+  font-weight: 600;
+  font-size: clamp(1.6rem, 6.5vw + 0.1rem, 3.5rem);
+  line-height: clamp(1.9rem, 8vw + 0.1rem, 4rem);
+  margin-bottom: 2rem;
+  max-width: 650px;
+  min-width: 650px;
+  text-align: center;
+}
+
+.index-text p {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.index-image {
+  width: 40em;
+  height: 42em;
+  display: flex;
+}
+
+.index-image img {
+  margin: 2rem;
+}
+
+.index-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.login-button button {
+  border: none;
+  width: 210px;
+  height: 81px;
+  background-color: #584ab0;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-button a button {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 37px;
+  color: #ebedf2;
+  text-align: center;
+}
+
+.singup-button button {
+  border: 3px solid #584ab0;
+  width: 210px;
+  height: 81px;
+  background-color: transparent;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.singup-button button:hover {
+  background-color: #584ab0;
+}
+
+.singup-button a button {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 37px;
+  color: #ebedf2;
+  text-align: center;
+}
+
+/* ---Planos--- */
+
+.pricing {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebedf2;
+  background: linear-gradient(130deg, #000000, #584ab0);
+  background-size: 350%;
+}
+
+.pricing-list-close {
+  display: flex;
+  text-decoration: none;
+  color: #ebedf233;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-list-check {
+  display: flex;
+  text-decoration: none;
+  color: #ebedf2;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-list-check span {
+  color: #00ff47;
+}
+
+.pricing .card {
+  width: 300px;
+  height: auto;
+  padding: 10px 0;
+  margin: 1.5rem 2rem;
+  text-align: center;
+  background: #251f4a;
+  border-radius: 15px;
+  box-shadow: 2px 5px 15px black;
+  transition: transform 0.3s;
+}
+
+.pricing .card:hover {
+  transform: scale(1.05);
+}
+
+.pricing .card .card-title {
+  padding: 30px 20px;
+  border-bottom: 2px solid gray;
+}
+
+.pricing .card .card-title h2 {
+  font-size: 35px;
+  padding-bottom: 15px;
+  color: yellow;
+}
+
+.pricing .card .card-title p span {
+  font-size: 40px;
+  padding: 0 5px;
+}
+
+.pricing .card .card-content ul {
+  padding: 10px 30px;
+  padding-bottom: 20px;
+}
+
+.pricing .card .card-content ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.pricing .card .card-content ul li i {
+  margin-right: 4px;
+}
+
+.pricing .card .card-content button {
+  width: 120px;
+  padding: 10px 20px;
+  background: #584ab0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pricing .card .card-content button:hover {
+  background: #584ab0;
+  letter-spacing: 1.2px;
+}
+
+.pricing .card .card-content a button {
+  text-decoration: none;
+  color: #ebedf2;
+  font-size: 15px;
+}
+
+/* ---media query--- */
+
+@media (max-width: 1366px) {
+  .index-image {
+    display: none;
+  }
+
+  .index-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .pricing {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .searchbar {
+    flex-direction: column;
+  }
+
+  .searchbar-keyword {
+    width: 420px;
+  }
+
+  .divider {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: #251f4a;
+  }
+}
+
+@media (max-width: 630px) {
+  .searchbar-keyword {
+    width: 300px;
+  }
+
+  .index-text h1 {
+    max-width: 450px;
+    min-width: 450px;
+  }
+
+  .index-buttons {
+    flex-direction: column;
+  }
+
+  .pricing ul {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .searchbar-keyword {
+    width: 270px;
+  }
+
+  .searchbar-mobile-button {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+  }
+
+  .searchbar-keyword-filter {
+    padding-left: 0.5rem;
+  }
+
+  .searchbar-keyword input {
+    padding-left: 0.5rem;
+    width: 240px;
+  }
+
+  .searchbar-button {
+    margin-top: 0.3rem;
+  }
+
+  .pricing ul {
+    height: 30rem;
+    width: 19rem;
+  }
+
+  .pricing-title {
+    font-size: 1.8rem;
+  }
+
+  .pricing-list-check {
+    font-size: 1.2rem;
+  }
+
+  .pricing-list-check span {
+    font-size: 1.4rem;
+  }
+
+  .pricing-list-close {
+    font-size: 1.2rem;
+  }
+
+  .pricing-list-close span {
+    font-size: 1.4rem;
+  }
+
+  .pricing-button {
+    margin-top: 2rem;
+  }
+}
