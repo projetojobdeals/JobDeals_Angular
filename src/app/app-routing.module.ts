@@ -15,6 +15,7 @@ import { TermsOfUseComponent } from './pages/terms-of-use/terms-of-use.component
 import { VacanciesPageComponent } from './pages/vacancies-page/vacancies-page.component';
 import { PopUpComponent } from './pages/pop-up/pop-up.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: 'vacancies-page', component: VacanciesPageComponent},
   { path: 'pop-up', component: PopUpComponent, data: { canShow: false } },
   { path: 'profile', component: ProfileComponent},
-
+  { path: 'settings-page', component: SettingsPageComponent},
+ 
 ];
 
 @NgModule({

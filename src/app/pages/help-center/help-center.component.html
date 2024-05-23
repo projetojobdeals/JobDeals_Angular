@@ -5,380 +5,57 @@
     </section>
 
     <section class="container">
-      <section class="helpcenter-text">
-        <h2>Perguntas Frequentes</h2>
+      <section
+        *ngFor="let section of sections.slice(0, 2)"
+        class="helpcenter-text"
+      >
+        <h2>{{ section.sectionTitle }}</h2>
 
         <div class="content">
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Adicionar ou alterar e-mail </span>
-              <div class="icon">+</div>
+          <div
+            class="accordion_item"
+            *ngFor="let item of section.items; let i = index"
+          >
+            <div class="accordion_header" (click)="toggleAccordion(section, i)">
+              {{ item.title }}
+              <span class="icon" #icon>+</span>
             </div>
 
-            <div class="accordion_content">
-              <p>
-                Para adicionar ou alterar um e-mail, entre em configurações -
-                Acesso e segurança em seguida selecione a opção e-mails,nesta
-                página selecione a opção alterar ou adicionar e-mail.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Redefinir senha </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Para redefinir sua senha, entre em configurações - Acesso e
-                segurança em seguida selecione a opção alterar senha.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Cancelar assinatura </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Para cancelar sua assinatura, entre em configurações,
-                Preferências da conta - Assinaturas e pagamentos, em seguida
-                selecione a opção cancelar assinatura.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Encerrar conta </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Para encerrar sua conta, entre em configurações, Preferências da
-                conta - Gerenciamento da conta, em seguida selecione a opção
-                encerrar conta.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Candidatar-se a vagas </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Ao ver uma vaga do seu interesse você pode se candidatar de modo
-                simples.
-                <br />Com base na preferência do anunciante da vaga, você verá
-                um botão onde pode se candidatar facilmente.
-              </p>
+            <div
+              class="accordion_content"
+              #content
+              [class.active]="item.active"
+              [ngStyle]="{ 'height.px': item.active ? item.contentHeight : 0 }"
+            >
+              {{ item.content }}
             </div>
           </div>
         </div>
       </section>
 
-      <section class="helpcenter-text">
-        <h2>Informações Básicas</h2>
+      <section
+        *ngFor="let section of sections.slice(2)"
+        class="helpcenter-text"
+      >
+        <h2>{{ section.sectionTitle }}</h2>
 
         <div class="content">
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Entrar e sair da conta </span>
-              <div class="icon">+</div>
+          <div
+            class="accordion_item"
+            *ngFor="let item of section.items; let i = index"
+          >
+            <div class="accordion_header" (click)="toggleAccordion(section, i)">
+              {{ item.title }}
+              <span class="icon" #icon>+</span>
             </div>
 
-            <div class="accordion_content">
-              <p>
-                Para entrar na sua conta, vá até o canto superior direito e
-                entre na área de login, coloque seu e-mail e senha caso seja
-                cadastrado e entre no seu perfil.<br />Para sair da sua conta
-                entre em configurações e selecione a opção sair da conta.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Editar perfil </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Para editar seu perfil, vá até o canto superior direito e
-                selecione o ícone de perfil, entre em configurações de perfil e
-                selecione a opção desejada.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Procurar vagas </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Para procurar vagas, vá a página principal e selecione a opção
-                "Qual vaga você está buscando?"
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Gerenciar e-mails </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Para gerenciar e-mails, entre em configurações - Acesso e
-                segurança, em seguida selecione a opção e-mails, nesta página
-                selecione a opção desejada.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Sem acesso ao e-mail </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Sem acesso ao e-mail? Entre em configurações - Acesso e
-                segurança, em seguida selecione a opção e-mails, nesta página
-                selecione a opção alterar e-mail.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="helpcenter-text">
-        <h2>Para Candidatos</h2>
-
-        <div class="content">
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Qual a forma de contato com a empresa? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como me cadastro? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span>
-                Qual a responsabilidade do site com o anúncio de vagas?
-              </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como a empresa visualiza meu currículo? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Oque são as contas premium? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como funcionam as contas premium? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Quais as formas de pagamento e como funciona? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="helpcenter-text">
-        <h2>Para Empresas</h2>
-        <div class="content">
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> É gratuito para empresas? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Pode se cadastrar sem CNPJ? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como ver referências e currículos dos candidatos? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como anunciar minhas vagas? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como alterar vagas? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como desativar minhas vagas? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
-            </div>
-          </div>
-          <div class="accordion_item">
-            <div class="accordion_header">
-              <span> Como recebo os currículos dos candidatos? </span>
-              <div class="icon">+</div>
-            </div>
-
-            <div class="accordion_content">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-                laudantium sapiente quasiodit repellat itaque qui sed modi quia
-                voluptas ullam odio, explicabo vero sequi aliasnon dolores amet
-                nobis.
-              </p>
+            <div
+              class="accordion_content"
+              #content
+              [class.active]="item.active"
+              [ngStyle]="{ 'height.px': item.active ? item.contentHeight : 0 }"
+            >
+              {{ item.content }}
             </div>
           </div>
         </div>
@@ -401,6 +78,4 @@
       </div>
     </aside>
   </main>
-
-  <script src="assets/js/help-center.js"></script>
 </body>

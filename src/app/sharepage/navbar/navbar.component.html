@@ -24,16 +24,13 @@
       <a routerLink="signup-page"><button>Começar aqui</button></a>
     </div>
     <div class="mobile-menu-icon">
-      <button onclick="menuShow()">
-        <img
-          class="icon"
-          src="assets/img/menu_white.svg"
-          alt="botão para abrir o menu"
-        />
+      <button (click)="toggleMenu()" #menuButton>
+        <img class="icon" src="assets/img/menu_white.svg" alt="botão para abrir o menu"
+          [ngClass]="{'open': isMenuOpen}" />
       </button>
     </div>
   </nav>
-  <div class="mobile-menu">
+  <div class="mobile-menu" [ngClass]="{'open': isMenuOpen}" #menu>
     <ul>
       <li class="nav-item"><a routerLink="" class="nav-link">Inicio</a></li>
       <li class="nav-item">

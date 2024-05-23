@@ -22,6 +22,7 @@ import { VacanciesPageComponent } from './pages/vacancies-page/vacancies-page.co
 import { VacancyCardComponent } from './pages/vacancy-card/vacancy-card.component';
 import { PopUpComponent } from './pages/pop-up/pop-up.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     VacancyCardComponent,
     PopUpComponent,
     ProfileComponent,
+    SettingsPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

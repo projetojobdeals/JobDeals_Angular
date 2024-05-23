@@ -80,6 +80,10 @@ header {
     display: none;
 }
 
+.mobile-menu.open {
+    display: block;
+  }
+
 @media (max-width: 1150px) {
     .nav-bar {
         padding: 1.5rem 4rem;
