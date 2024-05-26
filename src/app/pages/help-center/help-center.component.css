@@ -108,6 +108,8 @@ p {
   text-align: justify;
 }
 
+/* ---aside--- */
+
 .helpcenter-aside {
   display: flex;
   justify-content: center;
