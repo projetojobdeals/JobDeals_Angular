@@ -1,71 +1,71 @@
 footer {
-    background-color: #000000;
-    box-shadow: 0px 3px 10px #000000;
-    width: 100vw;
-    height: 35vh;
+  background-color: #000000;
+  box-shadow: 0px 3px 10px #000000;
+  width: 100vw;
+  height: 35vh;
 }
 
 .foot-bar {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .foot-logo {
-    display: flex;
-    align-self: flex-start;
-    flex-direction: column;
-    margin: 3em 5em;
-    color: var(--text-color);
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  margin: 3em 5em;
+  color: var(--text-color);
 }
 
 .foot-list {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 3em;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3em;
 }
 
 .foot-list ul {
-    display: block;
-    justify-content: center;
-    align-items: flex-start;
-    list-style: none;
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
 }
 
 .foot-titles {
-    margin: 0.5em 1em 0.8em;
-    color: var(--text-color);
-    font-size: 1.5rem;
-    font-weight: 800;
+  margin: 0.5em 1em 0.8em;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .foot-item {
-    margin: 0.8em 1.5em;
-    color: var(--text-color);
+  margin: 0.8em 1.5em;
+  color: var(--text-color);
 }
 
 .foot-link {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 400;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
 }
 
 @media (max-width: 920px) {
-    footer {
-        height: 25rem;
-    }
+  footer {
+    height: 25rem;
+  }
 
-    .foot-bar {
-        flex-direction: column;
-        align-items: center;
-    }
+  .foot-bar {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .foot-logo {
-        margin: 2em 2em;
-        align-self: center;
-    }
+  .foot-logo {
+    margin: 2em 2em;
+    align-self: center;
+  }
 
-    .foot-list {
-        margin: 1em 0 2em 0;
-    }
+  .foot-list {
+    margin: 1em 0 2em 0;
+  }
 }

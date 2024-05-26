@@ -130,7 +130,7 @@ body {
 }
 
 .signup-button a button,
-.signup-button-company a button  {
+.signup-button-company a button {
   text-decoration: none;
   color: #ebedf2;
   cursor: pointer;
@@ -244,6 +244,8 @@ body {
   background-color: #7765f0;
   transition: 0.2s;
 }
+
+/* ---media query--- */
 
 @media (max-width: 1250px) {
   .container {

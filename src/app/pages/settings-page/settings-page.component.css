@@ -1,0 +1,141 @@
+.container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.settings-card {
+  margin: 5rem 4rem;
+  width: 25%;
+  height: auto;
+  background-color: rgba(88, 74, 176, 0.35);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.settings-text a {
+  color: #ebedf2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.settings-text p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 28px;
+  margin: 3rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  background-color: #ebedf2;
+  box-shadow: 0px 3px 10px #000000;
+  border-radius: 24px;
+}
+
+#span1 {
+  background: url("../../../assets/img/lupa.png");
+  padding-left: 22px;
+  padding-top: 3px;
+  margin-left: 10px;
+}
+
+.searchbar-keyword {
+  width: 300px;
+  height: 50px;
+  position: relative;
+}
+
+.searchbar-keyword-input {
+  position: absolute;
+  top: 15px;
+  left: 0.5rem;
+  color: #584ab0;
+  font-weight: 700;
+}
+
+.searchbar-keyword-input :focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.searchbar-keyword input {
+  width: 280px;
+  padding: 1px 2px;
+  border: 0 none;
+  border-color: transparent;
+  background-color: transparent;
+  transition: none;
+  padding-left: calc(1.5rem - 1px);
+}
+
+/* ---card settings--- */
+
+.settings-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-card1 {
+  margin: 1rem 0rem;
+  width: 95%;
+  height: auto;
+  background-color: rgba(88, 74, 176, 0.35);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.settings-ico img {
+  margin-right: 7px;
+  margin-bottom: -13px;
+}
+
+.settings-card1 .description h2 {
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: #00ffff;
+  text-align: left;
+}
+
+.settings-card1 .description p {
+  font-weight: 400;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-top: 1rem;
+  margin-left: -40px;
+  text-align: justify;
+  color: #ebedf2;
+}
+
+.settings-card2 {
+  margin: 1rem 0rem;
+  width: 95%;
+  height: auto;
+  background-color: rgba(88, 74, 176, 0.35);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.settings-card2 .description h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #ebedf2;
+  text-align: left;
+}
