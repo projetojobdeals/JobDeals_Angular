@@ -181,14 +181,6 @@ body {
   color: #ebedf2;
 }
 
-.input-box input#firstname {
-  width: 160px;
-}
-
-.input-box input#lastname {
-  width: 220px;
-}
-
 /* Error and Success */
 
 .input-box.success input {
@@ -312,9 +304,7 @@ body {
     height: 600px;
   }
 
-  .input-box input,
-  .input-box input#firstname,
-  .input-box input#lastname {
+  .input-box input{
     width: 336px;
     height: 50px;
   }
@@ -338,14 +328,6 @@ body {
 
   .signup-button {
     padding-bottom: 1.5rem;
-  }
-
-  .input-box input#firstname {
-    width: 216px;
-  }
-
-  .input-box input#lastname {
-    width: 216px;
   }
 
   .input-box input {

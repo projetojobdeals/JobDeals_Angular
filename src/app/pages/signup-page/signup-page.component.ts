@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrl: './signup-page.component.css'
 })
 export class SignupPageComponent {
+  account = {
+    name: '',
+    email: '',
+    password: '',
+    confirmpassword: ''
+  };
+
+  constructor() { }
+
+  ngOnInit(){
+
+  }
+
+  onSubmit(){
+    
+  }
 
 }

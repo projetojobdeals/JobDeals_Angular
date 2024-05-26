@@ -1,5 +1,7 @@
 import { Component, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, Router } from '@angular/router';
+import { AuthGuard } from './account/shared/auth.guard';
+
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AnalysisComponent } from './pages/analysis/analysis.component';
@@ -16,31 +18,57 @@ import { VacanciesPageComponent } from './pages/vacancies-page/vacancies-page.co
 import { PopUpComponent } from './pages/pop-up/pop-up.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SettingsPageComponent } from './pages/settings-page/settings-page.component';
+import { AuthenticationComponent } from './pages/authentication/authentication.component';
+import { HomeComponent } from './pages/home/home.component';
+import { IndexComponent } from './pages/index/index.component';
+import { AccountService } from './account/shared/account.service';
+
+
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'analysis', component: AnalysisComponent },
-  { path: 'contact-us', component: ContactUsComponent },
-  { path: 'copyright', component: CopyrightComponent },
-  { path: 'help-center', component: HelpCenterComponent },
-  { path: 'home-page', component: HomePageComponent },
-  { path: 'login', component: LoginComponent, data: { canShow: false } },
-  { path: 'pricing', component: PricingComponent },
-  { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'signup-page', component: SignupPageComponent, data: { canShow: false }  },
-  { path: 'terms-of-use', component: TermsOfUseComponent },
-  { path: 'vacancies-page', component: VacanciesPageComponent},
-  { path: 'pop-up', component: PopUpComponent, data: { canShow: false } },
-  { path: 'profile', component: ProfileComponent},
-  { path: 'settings-page', component: SettingsPageComponent},
- 
+  { path: '', 
+    component: IndexComponent,
+    children: [
+      { path: '', component: LandingPageComponent},
+      { path: 'about', component: AboutComponent },
+      { path: 'contact-us', component: ContactUsComponent },
+      { path: 'copyright', component: CopyrightComponent },
+      { path: 'help-center', component: HelpCenterComponent },
+      { path: 'pricing', component: PricingComponent },
+      { path: 'privacy-policy', component: PrivacyPolicyComponent },      
+      { path: 'terms-of-use', component: TermsOfUseComponent },
+    ]
+  },
+  { path: '', 
+  component: HomeComponent,
+  children: [
+    { path: 'home', component: HomePageComponent},      
+    { path: 'vacancies-page', component: VacanciesPageComponent},
+    { path: 'pop-up', component: PopUpComponent, data: { canShow: false } },
+    { path: 'profile', component: ProfileComponent},
+    { path: 'settings-page', component: SettingsPageComponent},
+  ],
+  canActivate: [AuthGuard]
+  },
+  { path: '', 
+    component: AuthenticationComponent,
+    children: [
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup-page', component: SignupPageComponent },
+      { path: 'analysis', component: AnalysisComponent },
+    ]
+  }
 ];
+
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
   ],
   exports: [RouterModule],
+  providers: [
+    AuthGuard
+  ]
 })
 export class AppRoutingModule {}
