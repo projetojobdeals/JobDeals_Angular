@@ -22,8 +22,7 @@ import { AuthenticationComponent } from './pages/authentication/authentication.c
 import { HomeComponent } from './pages/home/home.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AccountService } from './account/shared/account.service';
-
-
+import { HomeCompanyComponent } from './pages/home-company/home-company.component';
 
 const routes: Routes = [
   { path: '', 
@@ -47,6 +46,7 @@ const routes: Routes = [
     { path: 'pop-up', component: PopUpComponent, data: { canShow: false } },
     { path: 'profile', component: ProfileComponent},
     { path: 'settings-page', component: SettingsPageComponent},
+    { path: 'home-company', component: HomeCompanyComponent},      
   ],
   canActivate: [AuthGuard]
   },
@@ -60,7 +60,6 @@ const routes: Routes = [
     ]
   }
 ];
-
 
 @NgModule({
   imports: [
