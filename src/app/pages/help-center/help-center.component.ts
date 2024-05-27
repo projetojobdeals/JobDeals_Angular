@@ -36,26 +36,26 @@ sections = [
 {
   sectionTitle:'Para Candidatos',
   items:[
-    { title: 'Qual a forma de contato com a empresa?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como me cadastro?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Qual a responsabilidade do site com o anúncio de vagas?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como a empresa visualiza meu currículo?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Oque são as contas premium?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como funcionam as contas premium?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Quais as formas de pagamento e como funciona?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
+    { title: 'Qual a forma de contato com a empresa?', content: 'Após a candidatura, se a empresa gostar do seu perfil o contato será feito via e-mail Empresa => Cadidato', active: false, contentHeight: 0 },
+    { title: 'Como me cadastro?', content: 'No canto superior direito da página principal, entre em "Começar aqui" e preencha seus dados, depois faça login.', active: false, contentHeight: 0 },
+    { title: 'Qual a responsabilidade do site com o anúncio de vagas?', content: 'Não somos responsáveis por qualquer tipo de vaga publicada, Apenas pelas empresas cadastradas, para visar sua segurança', active: false, contentHeight: 0 },
+    { title: 'Como a empresa visualiza meu currículo?', content: 'Os currículos dos usuários são disponiblizados a partir da sua candidatura a vaga, mas também pode ser acessado pela página de procura a candidatos', active: false, contentHeight: 0 },
+    { title: 'Oque são as contas premium?', content: 'Contas premium, são upgrades destinandos a melhorar seu perfil', active: false, contentHeight: 0 },
+    { title: 'Como funcionam as contas premium?', content: 'Os planos são destinatos a melhoria da experiência no site, cada plano usufrui de benefícios e vantagens únicas', active: false, contentHeight: 0 },
+    { title: 'Quais as formas de pagamento?', content: 'Os pagamentos são realizados via PIX ou cartão para maoir segurança do contratante', active: false, contentHeight: 0 },
 ]
 },
 
 {
   sectionTitle:'Para Empresas',
   items:[
-    { title: 'É gratuito para empresas?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Pode se cadastrar sem CNPJ?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como ver referências e currículos dos candidatos?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como anunciar minhas vagas?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como alterar vagas?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como desativar minhas vagas?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
-    { title: 'Como recebo os currículos dos candidatos?', content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad temporibus, praesentium nemo cupiditate, fugiat vitae eaque quibusdam nisi expedita officiis ducimus, maxime voluptas velit at voluptatum cum optio repellat.', active: false, contentHeight: 0 },
+    { title: 'É gratuito para empresas?', content: 'Sim, é gratuito, mas oferecemos planos que podem melhorar sua experiência na procura de novos candidatos', active: false, contentHeight: 0 },
+    { title: 'Pode se cadastrar sem CNPJ?', content: 'Não é possivel se cadastrar sem um CNPJ, para melhor segurança dos usuários, o cadastro do CNPJ é obrigatório', active: false, contentHeight: 0 },
+    { title: 'Como ver referências e currículos dos candidatos?', content: 'Entre no perfil do candidato e selecione a opção desejada', active: false, contentHeight: 0 },
+    { title: 'Como anunciar minhas vagas?', content: 'Vá em perfil e depois em "Anuciar Vagas", preencha os dados referentes a vaga e publique', active: false, contentHeight: 0 },
+    { title: 'Como alterar vagas?', content: 'Entre em seu perfil, selecione "Vagas Publicadas", entre na vaga que deseja alterar e selecione "Editar Vaga"', active: false, contentHeight: 0 },
+    { title: 'Como desativar minhas vagas?', content: 'Entre em seu perfil, selecione "Vagas Publicadas", entre na vaga que deseja desativar e selecione "Editar Vaga", depois escolha a opção "Desativar vaga"', active: false, contentHeight: 0 },
+    { title: 'Como recebo os currículos dos candidatos?', content: 'Quando os candidatos se inscrevem, as vagas automaticamente são enviados seus currículos para a aba da vaga escolhida, caso procure um candidato fora das candidaturas pesquise na página principal por perfis desejados e entre para ver seus respectivos currículos', active: false, contentHeight: 0 },
 ]
 },
 

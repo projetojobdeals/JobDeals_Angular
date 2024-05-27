@@ -29,6 +29,7 @@ import { AuthenticationComponent } from './pages/authentication/authentication.c
 import { HomeComponent } from './pages/home/home.component';
 import { IndexComponent } from './pages/index/index.component';
 import { HomeCompanyComponent } from './pages/home-company/home-company.component';
+import { ProfileCompanyComponent } from './pages/profile-company/profile-company.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { HomeCompanyComponent } from './pages/home-company/home-company.componen
     HomeComponent,
     IndexComponent,
     HomeCompanyComponent,
+    ProfileCompanyComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

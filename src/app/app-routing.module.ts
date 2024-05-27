@@ -23,6 +23,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AccountService } from './account/shared/account.service';
 import { HomeCompanyComponent } from './pages/home-company/home-company.component';
+import { ProfileCompanyComponent } from './pages/profile-company/profile-company.component';
 
 const routes: Routes = [
   { path: '', 
@@ -47,6 +48,7 @@ const routes: Routes = [
     { path: 'profile', component: ProfileComponent},
     { path: 'settings-page', component: SettingsPageComponent},
     { path: 'home-company', component: HomeCompanyComponent},      
+    { path: 'profile-company', component: ProfileCompanyComponent},
   ],
   canActivate: [AuthGuard]
   },

@@ -1,0 +1,204 @@
+.container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.profile-card {
+  margin: 5rem 4rem;
+  width: 25%;
+  height: 25rem;
+  background-color: #b4ace4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile-card1 {
+  margin: 1rem 0rem;
+  width: 85%;
+  height: auto;
+  background-color: #b4ace4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1.name {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.profile-text .description p {
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.profile-card1 .description h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #251f4a;
+  text-align: center;
+}
+
+.profile-card1 .description p {
+  font-weight: 500;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: justify;
+  color: #1d1d1d;
+}
+
+.profile-address {
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw + 0.1rem, 1.5rem);
+  line-height: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1d1d1d;
+}
+
+.address-ico {
+  width: 24px;
+}
+
+.socials {
+  margin: 30px 0;
+}
+
+.socials a {
+  margin-right: 40px;
+}
+
+.socials a:last-child {
+  margin-right: 0;
+}
+
+.socials img {
+  width: 48px;
+  transition: all 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(110%);
+}
+
+.card {
+  margin: 1rem 0rem;
+  width: 100%;
+  height: auto;
+  background-color: #b4ace4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .description h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+.apply-button {
+  text-align: center;
+}
+
+.apply-button button {
+  border: none;
+  height: 50px;
+  background-color: #7765f0;
+  padding: 0.4rem 5rem;
+  margin-top: 20px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.apply-button a button {
+  color: #ebedf2;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 37px;
+  text-align: center;
+}
+
+/* ---card de vagas--- */
+
+.vacancies-card {
+  margin: 1rem 0rem;
+  width: 80%;
+  height: auto;
+  background-color: #b4ace4;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-items: center;
+}
+
+.vacancies-card .description1 h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #251f4a;
+  text-align: center;
+}
+
+.vacancies {
+  align-self: start;
+  padding: 15px 50px;
+}
+
+.vacancies h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+
+.vacancies p {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  color: #1d1d1d;
+}
+
+.divider1 {
+  margin-top: 10px;
+  width: 72vw;
+  height: 1px;
+  background-color: #1d1d1d;
+}
+
+.vacancies-button button {
+  border: none;
+  height: 50px;
+  background-color: #7765f0;
+  padding: 0.4rem 5rem;
+  margin-top: 20px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.vacancies-button a button {
+  color: #ebedf2;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 37px;
+  text-align: center;
+}
