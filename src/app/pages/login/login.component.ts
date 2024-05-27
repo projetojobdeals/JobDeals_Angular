@@ -22,10 +22,6 @@ export class LoginComponent implements OnInit {
       const result = await this.accountService.login(this.login);
       console.log(`login efetuado: ${result}`);
   
-      // Armazena o token retornado pelo serviço
-      const token = result.token;
-      localStorage.setItem('token', token);
-  
       // Redireciona o usuário para a página inicial
       this.router.navigate(['/home']);
     } catch (error) {

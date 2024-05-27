@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AccountService } from '../../account/shared/account.service';
 
 @Component({
   selector: 'app-signup-page',
@@ -13,14 +14,20 @@ export class SignupPageComponent {
     confirmpassword: ''
   };
 
-  constructor() { }
+  constructor(private accountService: AccountService) { }
 
   ngOnInit(){
 
   }
 
-  onSubmit(){
-    
+  async onSubmit(){
+    try{
+      const result = await this.accountService.createAccount(this.account);
+
+      console.log(result);
+    } catch (error){
+        console.log(error);
+    }
   }
 
 }
